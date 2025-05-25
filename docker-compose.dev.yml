@@ -1,0 +1,15 @@
+services:
+  dev:
+    container_name: reactdesignsystemmf
+    image: reactdesignsystemmf
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - 5173:5173
+    volumes:
+      - .:/reactdesignsystemmf
+      - /reactdesignsystemmf/node_modules
+    environment:
+      - NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=true
