@@ -1,0 +1,11 @@
+services:
+  app:
+    container_name: reactdesignsystemmf
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - 5173:5173
+    command: /app/entrypoint.sh
+    environment:
+      NODE_ENV: development
