@@ -4,8 +4,11 @@ services:
     build: .
     volumes:
       - .:/app
+      - /app/node_modules
     ports:
       - 5173:5173
     command: /app/entrypoint.sh
     environment:
       NODE_ENV: development
+    tty: true
+    stdin_open: true
