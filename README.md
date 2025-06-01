@@ -2,7 +2,7 @@
 
 This project leverages React, TypeScript, and Vite, and is fully containerized with Docker for a streamlined development experience.
 
-It also implements a micro-frontend architecture using the `@originjs/vite-plugin-federation` plugin.
+It also implements a micro-frontend architecture using the [@originjs/vite-plugin-federation](https://github.com/originjs/vite-plugin-federation) plugin.
 
 ## Prerequisites
 
