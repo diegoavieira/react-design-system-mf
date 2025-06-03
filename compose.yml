@@ -6,7 +6,7 @@ services:
       - .:/app
     ports:
       - 5173:5173
-    command: /app/entrypoint.sh
+    command: sh -c "rm -rf /app/node_modules && cp -rfu /cache/node_modules/. /app/node_modules/ && exec npm run dev"
     environment:
       NODE_ENV: development
     tty: true
